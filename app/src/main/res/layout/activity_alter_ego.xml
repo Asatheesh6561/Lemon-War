@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlterEgoActivity">
+
+    <TextView
+        android:id="@+id/alter_ego_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/alter_egos"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lemon_alter_ego"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alter_ego_distance_from_left"
+        android:layout_marginTop="@dimen/alter_ego_distance"
+        android:text="Mr. Lemon:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alter_ego_title" />
+
+    <TextView
+        android:id="@+id/lemon_tree_alter_ego"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alter_ego_distance_from_left"
+        android:layout_marginTop="@dimen/alter_ego_distance"
+        android:text="Mr. Lemon Tree:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_plant_alter_ego" />
+
+    <TextView
+        android:id="@+id/lemon_country_alter_ego"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alter_ego_distance_from_left"
+        android:layout_marginTop="@dimen/alter_ego_distance"
+        android:text="Mr. Lemon Country:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_state_alter_ego" />
+
+    <TextView
+        android:id="@+id/lemon_world_alter_ego"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alter_ego_distance_from_left"
+        android:layout_marginTop="@dimen/alter_ego_distance"
+        android:text="Mr. Lemon World:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_country_alter_ego" />
+
+    <TextView
+        android:id="@+id/lemon_farm_alter_ego"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alter_ego_distance_from_left"
+        android:layout_marginTop="@dimen/alter_ego_distance"
+        android:text="Mr. Lemon Farm:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_tree_alter_ego" />
+
+    <TextView
+        android:id="@+id/lemon_village_alter_ego"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alter_ego_distance_from_left"
+        android:layout_marginTop="@dimen/alter_ego_distance"
+        android:text="Mr. Lemon Village:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_farm_alter_ego" />
+
+    <TextView
+        android:id="@+id/lemon_state_alter_ego"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alter_ego_distance_from_left"
+        android:layout_marginTop="@dimen/alter_ego_distance"
+        android:text="Mr. Lemon State:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_village_alter_ego" />
+
+    <TextView
+        android:id="@+id/lemon_plant_alter_ego"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alter_ego_distance_from_left"
+        android:layout_marginTop="@dimen/alter_ego_distance"
+        android:text="Mr. Lemon Plant:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_alter_ego" />
+
+    <Button
+        android:id="@+id/lemon_alter_ego_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button2"
+        android:text="Cost: $10"
+        app:layout_constraintStart_toEndOf="@+id/lemon_alter_ego"
+        app:layout_constraintTop_toBottomOf="@+id/alter_ego_title" />
+
+    <Button
+        android:id="@+id/lemon_world_alter_ego_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/alter_ego_distance_from_top"
+        android:background="@drawable/custom_button2"
+        android:text="Cost: $100M"
+        app:layout_constraintStart_toEndOf="@+id/lemon_world_alter_ego"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_country_alter_ego_button" />
+
+    <Button
+        android:id="@+id/lemon_country_alter_ego_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/alter_ego_distance_from_top"
+        android:background="@drawable/custom_button2"
+        android:text="Cost: $10M"
+        app:layout_constraintStart_toEndOf="@+id/lemon_country_alter_ego"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_state_alter_ego_button" />
+
+    <Button
+        android:id="@+id/lemon_state_alter_ego_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/alter_ego_distance_from_top"
+        android:background="@drawable/custom_button2"
+        android:text="Cost: $1M"
+        app:layout_constraintStart_toEndOf="@+id/lemon_state_alter_ego"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_village_alter_ego_button" />
+
+    <Button
+        android:id="@+id/lemon_village_alter_ego_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/alter_ego_distance_from_top"
+        android:background="@drawable/custom_button2"
+        android:text="Cost: $ 100K"
+        app:layout_constraintStart_toEndOf="@+id/lemon_village_alter_ego"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_farm_alter_ego_button" />
+
+    <Button
+        android:id="@+id/lemon_farm_alter_ego_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/alter_ego_distance_from_top"
+        android:background="@drawable/custom_button2"
+        android:text="Cost: $10K"
+        app:layout_constraintStart_toEndOf="@+id/lemon_farm_alter_ego"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_tree_alter_ego_button" />
+
+    <Button
+        android:id="@+id/lemon_tree_alter_ego_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/alter_ego_distance_from_top"
+        android:background="@drawable/custom_button2"
+        android:text="Cost: $1K"
+        app:layout_constraintStart_toEndOf="@+id/lemon_tree_alter_ego"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_plant_alter_ego_button" />
+
+    <Button
+        android:id="@+id/lemon_plant_alter_ego_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/alter_ego_distance_from_top"
+        android:background="@drawable/custom_button2"
+        android:text="Cost: $100"
+        app:layout_constraintStart_toEndOf="@+id/lemon_plant_alter_ego"
+        app:layout_constraintTop_toBottomOf="@+id/lemon_alter_ego_button" />
+
+    <Button
+        android:id="@+id/back_alter_ego_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#257703"
+    >
+        <Button
+            android:id="@+id/lemon_farm_bought"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/bought_height"
+            android:background="@drawable/custom_button2"
+            android:text="Bought: 0 \n Next: 0"
+            android:textSize="9sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_farm_image" />
+
+        <Button
+            android:id="@+id/lemon_bought"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/bought_height"
+            android:background="@drawable/custom_button2"
+            android:text="Bought: 0 \n Next: 0"
+            android:textSize="9sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_image" />
+
+        <Button
+            android:id="@+id/lemon_plant_bought"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/bought_height"
+            android:background="@drawable/custom_button2"
+            android:text="Bought: 0 \n Next: 0"
+            android:textSize="9sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_plant_image" />
+
+        <Button
+            android:id="@+id/lemon_village_click"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button2"
+            android:clickable="false"
+            android:text="@string/click_button"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/lemon_village_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_village_progress_bar"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_state_click"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button2"
+            android:clickable="false"
+            android:text="@string/click_button"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/lemon_state_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_state_progress_bar"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_country_click"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button2"
+            android:clickable="false"
+            android:text="@string/click_button"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/lemon_country_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_country_progress_bar"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_plant_click"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button2"
+            android:clickable="false"
+            android:text="@string/click_button"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/lemon_plant_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_plant_progress_bar"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_farm_click"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button2"
+            android:clickable="false"
+            android:text="@string/click_button"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/lemon_farm_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_farm_progress_bar"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/amount_of_lemons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:text="Total Money Made: $0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@id/lemon_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fresh_lemons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amount_of_lemons" />
+
+        <ImageView
+            android:id="@id/lemon_plant_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:layout_marginTop="@dimen/distance_to_next"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lemon_plant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_image" />
+
+        <ImageView
+            android:id="@id/lemon_tree_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:layout_marginTop="@dimen/distance_to_next"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lemon_tree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_plant_image" />
+
+        <ImageView
+            android:id="@id/lemon_farm_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:layout_marginTop="@dimen/distance_to_next"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lemon_farm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_tree_image" />
+
+        <ProgressBar
+            android:id="@+id/lemon_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:max="100"
+            android:maxHeight="@dimen/max_height"
+            android:progress="0"
+            android:scaleY="7"
+            app:layout_constraintStart_toEndOf="@+id/lemon_image"
+            app:layout_constraintTop_toBottomOf="@+id/amount_of_lemons" />
+
+        <ProgressBar
+            android:id="@+id/lemon_plant_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginTop="@dimen/progress_bar_margin"
+            android:max="100"
+            android:maxHeight="30dp"
+            android:progress="0"
+            android:scaleY="7"
+            app:layout_constraintStart_toEndOf="@+id/lemon_plant_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_progress_bar" />
+
+        <ProgressBar
+            android:id="@+id/lemon_tree_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginTop="@dimen/progress_bar_margin"
+            android:max="100"
+            android:maxHeight="30dp"
+            android:progress="0"
+            android:scaleY="7"
+            app:layout_constraintStart_toEndOf="@+id/lemon_tree_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_plant_progress_bar" />
+
+        <ProgressBar
+            android:id="@+id/lemon_farm_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginTop="@dimen/progress_bar_margin"
+            android:max="100"
+            android:maxHeight="30dp"
+            android:progress="0"
+            android:scaleY="7"
+            app:layout_constraintStart_toEndOf="@+id/lemon_farm_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_tree_progress_bar" />
+
+        <ImageView
+            android:id="@+id/lemon_village_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:layout_marginStart="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lemon_village"
+            app:layout_constraintStart_toEndOf="@id/lemon_progress_bar"
+            app:layout_constraintTop_toBottomOf="@+id/amount_of_lemons" />
+
+        <ProgressBar
+            android:id="@+id/lemon_village_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:max="100"
+            android:maxHeight="30dp"
+            android:progress="0"
+            android:scaleY="7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/lemon_village_image"
+            app:layout_constraintTop_toBottomOf="@+id/amount_of_lemons" />
+
+        <ImageView
+            android:id="@+id/lemon_state_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/distance_to_next"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lemon_state"
+            app:layout_constraintStart_toEndOf="@id/lemon_plant_progress_bar"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_village_image" />
+
+        <ProgressBar
+            android:id="@+id/lemon_state_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginTop="@dimen/progress_bar_margin"
+            android:max="100"
+            android:maxHeight="30dp"
+            android:progress="0"
+            android:scaleY="7"
+            app:layout_constraintStart_toEndOf="@+id/lemon_state_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_village_progress_bar" />
+
+        <ImageView
+            android:id="@+id/lemon_country_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/distance_to_next"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lemon_country"
+            app:layout_constraintStart_toEndOf="@id/lemon_tree_progress_bar"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_state_image" />
+
+        <ProgressBar
+            android:id="@+id/lemon_country_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginTop="@dimen/progress_bar_margin"
+            android:max="100"
+            android:maxHeight="30dp"
+            android:progress="0"
+            android:scaleY="7"
+            app:layout_constraintStart_toEndOf="@+id/lemon_country_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_state_progress_bar" />
+
+        <ImageView
+            android:id="@+id/lemon_world_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/distance_to_next"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lemon_world"
+            app:layout_constraintStart_toEndOf="@id/lemon_farm_progress_bar"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_country_image" />
+
+        <ProgressBar
+            android:id="@+id/lemon_world_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginTop="@dimen/progress_bar_margin"
+            android:max="100"
+            android:maxHeight="30dp"
+            android:progress="0"
+            android:scaleY="7"
+            app:layout_constraintStart_toEndOf="@+id/lemon_world_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_country_progress_bar" />
+
+        <Button
+            android:id="@+id/lemon_click"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button2"
+            android:clickable="false"
+            android:text="@string/click_button"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/lemon_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_progress_bar"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_world_click"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button2"
+            android:clickable="false"
+            android:text="@string/click_button"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/lemon_world_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_world_progress_bar"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_tree_click"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button2"
+            android:clickable="false"
+            android:text="@string/click_button"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/lemon_tree_image"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_tree_progress_bar"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_state_bought"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/bought_height"
+            android:background="@drawable/custom_button2"
+            android:text="Bought: 0 \n Next: 0"
+            android:textSize="9sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_state_image"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_country_bought"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/bought_height"
+            android:background="@drawable/custom_button2"
+            android:text="Bought: 0 \n Next: 0"
+            android:textSize="9sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_country_image"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_village_bought"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/bought_height"
+            android:background="@drawable/custom_button2"
+            android:text="Bought: 0 \n Next: 0"
+            android:textSize="9sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_village_image"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_world_bought"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/bought_height"
+            android:background="@drawable/custom_button2"
+            android:text="Bought: 0 \n Next: 0"
+            android:textSize="9sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_world_image"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/lemon_tree_bought"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/bought_height"
+            android:background="@drawable/custom_button2"
+            android:text="Bought: 0 \n Next: 0"
+            android:textSize="9sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_tree_click"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/alter_egos_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button2"
+            android:text="@string/alter_egos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lemon_world_bought" />
+</androidx.constraintlayout.widget.ConstraintLayout>

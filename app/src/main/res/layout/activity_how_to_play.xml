@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowToPlayActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/falling_lemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/how_to_play_description" />
+
+    <TextView
+        android:id="@+id/how_to_play_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/how_to_play"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/how_to_play_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Adventurer! \nYou have been transplanted into the Lemon Dimension, and your goal is be the champion of the entire galaxy. In order to do this, you must have full control of the Lemon Galaxy\'s economy. In the Lemon Galaxy\'s economy, there are several layers, starting with a single lemon, moving up to a lemon plant, lemon tree, and ending with a lemon planet. To start, we have given you one dollar, which is the same amount of money needed to buy one lemon. We understand that this is a daunting task, so we have provided you with alter egos: clones of yourself that will accelerate your journey. Your objective is to obtain 50 of each layer using various alter egos.\n\nGood Luck!\nThe Citrus Council"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how_to_play_title"
+        app:layout_constraintVertical_bias="0.097"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how_to_play_instructions" />
+</androidx.constraintlayout.widget.ConstraintLayout>

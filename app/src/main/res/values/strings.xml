@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Evolve</string>
+    <string name="alter_egos"> Alter-Egos</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="click_button">Click</string>
+    <string name="start">Start</string>
+    <string name="title">Welcome to Lemon War!</string>
+    <string name="won_string">Congratulations! You have won!</string>
+    <string name="content_desc">Ending Lemon War Image</string>
+    <string name="how_to_play_description">How to play Description</string>
+    <string name="starting_screen_image">Starting screen image</string>
+</resources>

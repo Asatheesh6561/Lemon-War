@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_width_height">60dp</dimen>
+    <dimen name="distance_to_next">60dp</dimen>
+    <dimen name="max_height">30dp</dimen>
+    <dimen name="progress_bar_width">120dp</dimen>
+    <dimen name="progress_bar_margin">90dp</dimen>
+    <dimen name="progress_bar_height">30dp</dimen>
+    <dimen name="bought_height">40dp</dimen>
+    <dimen name="alter_ego_distance">35dp</dimen>
+    <dimen name="alter_ego_distance_from_left">20dp</dimen>
+    <dimen name="alter_ego_distance_from_top">13dp</dimen>
+</resources>
